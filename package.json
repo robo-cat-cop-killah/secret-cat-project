@@ -1,0 +1,35 @@
+{
+  "name": "asma-jest-puppeteer",
+  "jest" : { "verbose":true },
+  "version": "1.1.0",
+  "description": "ASMA browser test demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "jest": "^23.6.0",
+    "jest-puppeteer": "^3.9.1",
+    "puppeteer": "^1.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikesparr/jest-puppeteer-example.git"
+  },
+  "keywords": [
+    "testing",
+    "puppeteer",
+    "jest"
+  ],
+  "author": "Mike Sparr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikesparr/jest-puppeteer-example/issues"
+  },
+  "homepage": "https://github.com/mikesparr/jest-puppeteer-example#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "websocket": "^1.0.31"
+  }
+}
