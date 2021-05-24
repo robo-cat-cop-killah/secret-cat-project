@@ -85,7 +85,7 @@ class AsmatorReporter {
             result.test_result = out;
 
             var root ={ "result": JSON.stringify(result)}
-            root.script = "\"${process.env.ASMA_ENTRY_BIN}\" ${process.env.ASMA_ENTRY_ARGS}";
+            root.script = "jest";
             root.check_guid = "2983332e-0e57-43df-a81b-179318e11aa0";
             root.timeout = 60000;
             root.user = agent_id;
