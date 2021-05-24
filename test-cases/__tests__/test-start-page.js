@@ -42,7 +42,11 @@ describe('(Start Page)',() =>
     				throw new Error("Failed to load https://www.digitaljournal.com");
 			}
 		}	
-	});	 
-
+	});	
+	
+	afterAll(async() => {
+  		await driver.quit();
+	});
+		
 });
 
