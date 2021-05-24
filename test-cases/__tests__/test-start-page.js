@@ -22,7 +22,7 @@ describe('(Start Page)',() =>
 	  	} while (browser == undefined && count < retries);
 	});
 
-	test("Open Apicasystems.com",async() => {	
+	test("Load Single Page",async() => {	
 		try {
 			await page.goto("https://www.apica.io");
 
@@ -33,7 +33,7 @@ describe('(Start Page)',() =>
 		}	
 	});
 
-	test("Click link",async() => {	
+	test("Load Second Page",async() => {	
 		try {
 			await page.goto("https://www.digitaljournal.com");
 
@@ -44,9 +44,7 @@ describe('(Start Page)',() =>
 		}	
 	});	
 	
-	afterAll(async() => {
-  		await driver.quit();
-	});
+	afterAll(() => setTimeout(() => process.exit(), 1000))
 		
 });
 
