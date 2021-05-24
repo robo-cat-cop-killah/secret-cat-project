@@ -1,5 +1,8 @@
 const { spawn } = require('child_process');
 
+const { exec } = require('child_process');
+
+
 const subprocess = spawn("Xvfb", [':0','-shmem'], {
   detached: true,
   stdio: 'ignore'
